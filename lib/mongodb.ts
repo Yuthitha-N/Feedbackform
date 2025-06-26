@@ -1,7 +1,7 @@
 import { MongoClient, type Db } from "mongodb"
 
 const uri = process.env.MONGODB_URI || "mongodb+srv://Feedbackform:Feedbackform@form.q46ssid.mongodb.net/?retryWrites=true&w=majority&appName=form"
-const dbName = process.env.MONGODB_DB || "Feedbackform"
+const dbName = process.env.MONGODB_DB || "Feedback"
 
 let client: MongoClient
 let clientPromise: Promise<MongoClient>
