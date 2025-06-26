@@ -1,0 +1,31 @@
+-- MongoDB doesn't use SQL, but here's the equivalent structure
+-- This would be handled by the MongoDB driver automatically
+
+-- Collections that will be created:
+-- 1. users - for authentication
+-- 2. feedback - for storing feedback responses
+
+-- Users collection structure:
+-- {
+--   _id: ObjectId,
+--   email: String,
+--   password: String (hashed),
+--   createdAt: Date
+-- }
+
+-- Feedback collection structure:
+-- {
+--   _id: ObjectId,
+--   studentInfo: {
+--     name: String,
+--     rollNo: String,
+--     phoneNo: String,
+--     course: String,
+--     instructorName: String,
+--     location: String,
+--     collegeName: String
+--   },
+--   feedback: Object, // Key-value pairs of question responses
+--   submittedAt: String,
+--   createdAt: Date
+-- }
